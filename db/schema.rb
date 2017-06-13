@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170613195511) do
+ActiveRecord::Schema.define(version: 20170613200020) do
 
   create_table "locations", force: :cascade do |t|
     t.string "country"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20170613195511) do
     t.string  "name"
     t.string  "manufacture"
     t.decimal "cost"
-    t.integer "quantity"
+    t.decimal "quantity"
   end
 
   create_table "widgets", force: :cascade do |t|
