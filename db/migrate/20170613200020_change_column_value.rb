@@ -1,5 +1,5 @@
 class ChangeColumnValue < ActiveRecord::Migration[5.0]
   def change
-    change_column :parts, :quantity, :decimal
+    remove_column :parts, :quantity, :decimal
   end
 end
